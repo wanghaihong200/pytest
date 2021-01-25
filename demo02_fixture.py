@@ -33,6 +33,7 @@ class TestCase():
         print("用例3：登录之后其它动作333")
 
 
-
 if __name__ == "__main__":
-    pytest.main(["-s", "test_fix.py"])
+    # terminal中执行 pytest -s demo02_fixture.py  --html=./report/report.html --self-contained-html
+    # 生成一个 html报告
+    pytest.main(args=["-s", "demo02_fixture.py"])
